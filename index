@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – grac.photo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>grac.photo</h1>
+  <p>Fotograf mody i kobiecości – Poznań/Warszawa & całym świecie</p>
+</header>
+
+<nav>
+  <a href="#o-mnie">O mnie</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#cennik">Cennik</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="o-mnie">
+  <h2>O mnie</h2>
+  <p>Jestem fotografem mody i kobiecości. Moim celem jest kreowanie wyjątkowych, stylowych obrazów, które podkreślają indywidualność i siłę kobiet. Współpracuję głównie w Poznaniu i Warszawie, ale jestem gotów na realizacje na całym świecie.</p>
+</section>
+
+<section id="galeria">
+  <h2>Galeria</h2>
+  <div class="gallery">
+    <a href="#lightbox1"><img src="images/photo1.jpg" alt="Zdjęcie 1"></a>
+    <a href="#lightbox2"><img src="images/photo2.jpg" alt="Zdjęcie 2"></a>
+    <a href="#lightbox3"><img src="images/photo3.jpg" alt="Zdjęcie 3"></a>
+    <a href="#lightbox4"><img src="images/photo4.jpg" alt="Zdjęcie 4"></a>
+  </div>
+  <div id="lightbox1" class="lightbox"><a href="#galeria"><img src="images/photo1.jpg" alt="Zdjęcie 1"></a></div>
+  <div id="lightbox2" class="lightbox"><a href="#galeria"><img src="images/photo2.jpg" alt="Zdjęcie 2"></a></div>
+  <div id="lightbox3" class="lightbox"><a href="#galeria"><img src="images/photo3.jpg" alt="Zdjęcie 3"></a></div>
+  <div id="lightbox4" class="lightbox"><a href="#galeria"><img src="images/photo4.jpg" alt="Zdjęcie 4"></a></div>
+</section>
+
+<section id="cennik">
+  <h2>Cennik</h2>
+  <ul class="price-list">
+    <li>Sesja mody – od 400 zł</li>
+    <li>Portret kobiecy – 350 zł</li>
+    <li>Całodniowy fotoreportaż stylizowany – od 1500 zł</li>
+  </ul>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <form>
+    <input type="text" name="name" placeholder="Twoje imię" required>
+    <input type="email" name="email" placeholder="Twój email" required>
+    <textarea name="message" placeholder="Wiadomość" rows="5" required></textarea>
+    <button type="submit">Wyślij wiadomość</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 grac.photo – Wszelkie prawa zastrzeżone</p>
+</footer>
+
+</body>
+</html>
