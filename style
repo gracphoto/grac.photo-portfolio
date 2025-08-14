@@ -1,0 +1,140 @@
+:root {
+  --beige-light: #f4f1ec;
+  --beige-mid: #a89f91;
+  --brown-dark: #7b6f63;
+  --brown-darker: #5e534a;
+  --text-dark: #3e3a37;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--beige-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--beige-mid);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: var(--brown-dark);
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: var(--brown-darker);
+}
+
+section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--brown-dark);
+  display: inline-block;
+  padding-bottom: .3rem;
+}
+
+/* Galeria z lightboxem */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+/* Cennik */
+.price-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.price-list li {
+  background: var(--beige-mid);
+  margin: .5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Formularz kontaktowy */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: .7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: var(--brown-dark);
+  color: white;
+  padding: .7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+button:hover {
+  background: var(--brown-darker);
+}
+
+footer {
+  background: var(--brown-dark);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
